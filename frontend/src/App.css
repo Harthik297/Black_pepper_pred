@@ -1,0 +1,144 @@
+/* Background and general app styling */
+.App {
+  background-color: black ;/* Replace with your image path */
+  background-size:cover;
+  background-position: center;
+  height: 100vh; /* Full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Ensure text is visible */
+  flex-direction: column; /* Stack content vertically */
+}
+h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 56px; /* Adjust the font size as needed */
+  color: green; /* Adjust the color to contrast with the background */
+  text-align: center; /* Center the heading text */
+  margin-bottom: 20px; /* Add space below the heading */
+  margin-top: -20px;
+  margin-left: 60px;
+  position: relative;
+}
+/* Enlarged Upload area styling */
+.upload-area {
+  width: 800px; /* Increased width */
+  height: 300px; /* Increased height */
+  border: 2px dashed #ddd; /* Border for drag-and-drop area */
+  padding: 20px;
+  position: relative; /* Needed for positioning the submit button */
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+  margin-left: 90px;
+  margin-bottom: -20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent background */
+}
+
+.upload-area.active {
+  border-color: #2196F3; /* Change border color when dragging over */
+}
+
+.upload-area p {
+  margin: 0;
+  color: white;
+  position: absolute;
+  top: 50%; /* Center text vertically */
+  left: 50%; /* Center text horizontally */
+  transform: translate(-50%, -50%); /* Adjust for centering */
+}
+
+/* Submit button styling */
+.submit-button {
+  position: absolute; /* Positioning the button */
+  bottom: 10px; /* Bottom position */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Correct centering */
+  background-color: #2196F3; /* Blue color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 15px;
+  transition: background-color 0.3s ease;
+
+}
+
+.submit-button:hover {
+  background-color: #0d47a1; /* Darker blue on hover */
+}
+.Pre{
+  margin-left: 20px;
+  margin-right: -20px;
+}
+.Res{
+  margin-left: 90px;
+}
+
+/* Image styling */
+img {
+  border-radius: 10px; /* Rounded corners */
+  margin-left: 80px;
+  position: relative;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+div {
+  text-align: center;
+}
+.Points{
+  text-align: justify;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding-bottom: 100px;
+
+  }
+  .Preview{
+    margin-left: 15px;
+  }
+  .Result{
+    margin-left: -10px;
+    margin-right: -4px;
+  }
+  h2 {
+    font-size: 28px;
+    margin-left: -5px; /* Smaller font size for mobile */
+  }
+  .Pre{
+    margin-left: 20px;
+    margin-right: -20px;
+  }
+  .Res{
+    margin-left: 40px;
+  }
+  .upload-area {
+    height: 250px; /* Slightly smaller height on mobile */
+    width: 350px;
+    margin-left: 3px;
+  }
+
+  .submit-button {
+    font-size: 16px; /* Adjust button size for mobile */
+    margin-left: 2px;
+    margin-bottom: -10%;
+    position: absolute;
+  }
+
+  img {
+    max-width: 40%;
+    margin-left: -60px; /* Ensure image scales down to fit smaller screens */
+    margin-right: -100px;
+    position: absolute;
+  }
+  div {
+    text-align: center;
+  }
+  
+}
